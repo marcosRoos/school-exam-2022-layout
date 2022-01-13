@@ -57,4 +57,4 @@ Develop a software wich:
 
 `target="_blank"` does not work on github, so you must manually open the links below in a new tab.
 
-<a href="" target="_blank" >Click here to acess the front-end</a>[not available]
+<a href="" target="_blank" >Click here to acess the front-end</a> [not available]
