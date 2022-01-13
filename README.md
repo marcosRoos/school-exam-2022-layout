@@ -1,4 +1,4 @@
-<a href="">Clique aqui para ler isto em Pt-BR</a> [Link não disponível]
+<a href="https://github.com/marcosRoos/school-exam-2022-layout/blob/main/README%20pt-br.md">Clique aqui para ler isto em Pt-BR</a>
 
 # School Exam 2022 - Layout (3/3)
 
