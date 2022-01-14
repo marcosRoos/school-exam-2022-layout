@@ -56,4 +56,4 @@ Escreva um programa que:
 
 `target="_blank"` não funciona no github, então você precisará abrir os links abaixo em uma nova aba manualmente.
 
-<a href="">Clique aqui para acessar o front-end</a> [Link indisponível]
+<a href="https://marcosroos.github.io/school-exam-2022-layout/">Clique aqui para acessar o front-end</a>
