@@ -5,7 +5,7 @@ showElement('screen-register');
 hideElement('info');
 
 const reg_text = new RegExp('^[a-zA-ZÁ-ü\\s]{3,30}$');
-const reg_grade = new RegExp('^[0-1]?[0-9]([.][0-9]?[0-9])?$');
+const reg_grade = new RegExp('^[0-9]([.][0-9]?[0-9])?$|^10$');
 const reg_freq = new RegExp('^[0-9]?[0-9]$|100');
 
 var students = [];
