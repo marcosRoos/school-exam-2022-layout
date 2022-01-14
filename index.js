@@ -5,8 +5,8 @@ showElement('screen-register');
 hideElement('info');
 
 const reg_text = new RegExp('^[a-zA-ZÁ-ü\\s]{3,30}$');
-const reg_grade = new RegExp('^[0-9]([.][0-9]?[0-9])?$|^10$');
-const reg_freq = new RegExp('^[0-9]?[0-9]$|100');
+const reg_grade = new RegExp('^[0-9](([.]|[,])[0-9]?[0-9])?$|^10$');
+const reg_freq = new RegExp('^[0-9]?[0-9](([.]|[,])[0-9]?[0-9])?[%]?$|^100[%]?$');
 
 var students = [];
 
@@ -46,9 +46,9 @@ function registerStudent() {
     if (validateStudentsForm(input_name.value, input_grade_first.value, input_grade_second.value, input_frequency.value)) {
         let newStudent = {
             name: input_name.value,
-            grade_first: input_grade_first.value,
-            grade_second: input_grade_second.value,
-            frequency: input_frequency.value
+            grade_first: input_grade_first.value.replace(',', '.'),
+            grade_second: input_grade_second.value.replace(',', '.'),
+            frequency: input_frequency.value.replace('%', '')
         };
         students.push(newStudent);
         showElement('screen-block');
