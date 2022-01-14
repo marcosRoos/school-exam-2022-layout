@@ -18,15 +18,15 @@ function showError(message, durationInSeconds) {
 
 function validateStudentsForm(name, grade_first, grade_second, frequency) {
     if (!name.match(reg_text)) {
-        showError('Nome inválido!', 5);
+        showError('Nome inválido! [deve possuir entre 3 e 30 caracteres não numéricos]', 5);
         return false;
     }
     if (!grade_first.match(reg_grade) || !grade_second.match(reg_grade)) {
-        showError('Nota Inválida', 5);
+        showError('Nota Inválida [deve estar entre 0 e 10, pode ter até duas casas decimais após a virgula]', 5);
         return false;
     }
     if (!frequency.match(reg_freq)) {
-        showError('Frequência Inválida', 5);
+        showError('Frequência Inválida [deve estar entre 0 e 100, pode ter até duas casas decimais após a virgula]', 5);
         return false;
     }
     return true;
@@ -43,9 +43,19 @@ function registerStudent() {
     let input_grade_first = document.getElementById('input_student_grade_first');
     let input_grade_second = document.getElementById('input_student_grade_second');
     let input_frequency = document.getElementById('input_student_frequency');
+
+    let name_parts = input_name.value.split(' ');
+    let formated_name = '';
+    for(let i=0; i<name_parts.length; i++) {
+        name_parts[i] = name_parts[i].substring( 0, 0) + name_parts[i].charAt(0).toUpperCase() + name_parts[i].substring(1);
+        formated_name += name_parts[i];
+        formated_name += i<(name_parts.length-1)? ' ' : ''
+    }
+    console.log(name_parts);
+
     if (validateStudentsForm(input_name.value, input_grade_first.value, input_grade_second.value, input_frequency.value)) {
         let newStudent = {
-            name: input_name.value,
+            name: formated_name,
             grade_first: input_grade_first.value.replace(',', '.'),
             grade_second: input_grade_second.value.replace(',', '.'),
             frequency: input_frequency.value.replace('%', '')
