@@ -150,7 +150,7 @@ function generateTable() {
         row.appendChild(data_average);
 
         let data_frequency = document.createElement('td');
-        data_frequency.innerHTML = students[i].frequency;
+        data_frequency.innerHTML = students[i].frequency + ' %';
         row.appendChild(data_frequency);
 
         table.appendChild(row);
