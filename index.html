@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Layout</title>
+</head>
+
+<body>
+    <div class="structure">
+        <div id="info">Menssagem de erro!</div>
+        <div class="header">
+            <img src="img/pucrs-logo.png" alt="">
+        </div>
+        <div class="principal-menu">
+            <ul>
+                <li><a href=”#”>Link1</a></li>
+                <li><a href=”#”>Link2</a></li>
+                <li><a href=”#”>Link3</a></li>
+                <li><a href=”#”>Link4</a></li>
+                <li><a href=”#”>Link5</a></li>
+            </ul>
+        </div>
+        <div class="columns-container">
+            <div class="column-left">
+                <label for="">Navigation List</label>
+                <div class="navigation-lateral">
+                    <ul>
+                        <li><a href=”#”>Link1</a></li>
+                        <li><a href=”#”>Link2</a></li>
+                        <li><a href=”#”>Link3</a></li>
+                        <li><a href=”#”>Link4</a></li>
+                        <li><a href=”#”>Link5</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column-center">
+                <div class="form-container">
+                    <label for="">Nome</label>
+                    <input type="text" name="" id="" placeholder="Insira seu nome completo">
+                    <label for="">Email</label>
+                    <input type="text" name="" id="" placeholder="Insira seu endereço de email">
+                    <label for="">Telefone</label>
+                    <input type="text" name="" id="" placeholder="Insira seu telefone">
+                    <label for="">Message</label>
+                    <textarea name="" id="" cols="30" rows="6" placeholder="Insira sua menssagem"></textarea>
+                    <input type="checkbox" name="" id="terms-toogle">
+                    <p>concordo com os <a href="">Termos e condições</a></p>
+                    <button>Enviar</button>
+                </div>
+
+                <div class="form-container">
+                    <div id="screen-register">
+                        <p style="margin: 8px 0 8px 0; text-align: center; width: 100%; font-weight: bolder;">Registro
+                            de notas dos alunos</p>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="input_student_name" placeholder="Insira o nome do aluno">
+                        <label for="grade1">Nota 1º Semestre</label>
+                        <input type="text" name="grade1" id="input_student_grade_first"
+                            placeholder="Insira a nota do aluno">
+                        <label for="grade2">Nota 2º Semestre</label>
+                        <input type="text" name="grade2" id="input_student_grade_second"
+                            placeholder="Insira a nota do aluno">
+                        <label for="freq">Frequência</label>
+                        <input type="text" name="freq" id="input_student_frequency"
+                            placeholder="Insira a frequência do aluno">
+                        <button onclick="registerStudent()" >Registrar</button>
+                    </div>
+                    <div id="screen-table">
+                        <p style="margin: 8px 0 8px 0; text-align: center; width: 100%; font-weight: bolder;">Boletim</p>
+                    </div>    
+                </div>
+                <div id="screen-block"></div>
+                    <div id="screen-sucefull">
+                        <img src="img/ok.svg" alt="">
+                        <p> Aluno registrado com sucesso! </p>
+                        <hr>
+                        <p> Deseja continuar registrando ? </p>
+                            <button onclick="choiceFinish()"> Terminar </button>
+                            <button onclick="choiceContinue()"> Continuar </button>
+                    </div>
+            </div>
+            <div class="column-right">
+
+            </div>
+        </div>
+        <div class="footer">
+            <p> Exercício Técnico [ Marco Antônio M. Roos ] </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
