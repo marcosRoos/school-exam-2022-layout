@@ -146,7 +146,7 @@ function generateTable() {
         row.appendChild(data_grade_second);
 
         let data_average = document.createElement('td');
-        data_average.innerHTML = average;
+        data_average.innerHTML = average.toFixed(2);
         row.appendChild(data_average);
 
         let data_frequency = document.createElement('td');
