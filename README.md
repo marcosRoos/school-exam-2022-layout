@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/Maintained%3F-no-red.svg"/>
+<img src="http://unmaintained.tech/badge.svg"/>
 
 <a href="https://github.com/marcosRoos/school-exam-2022-layout/blob/main/README%20pt-br.md">Clique aqui para ler isto em Pt-BR</a>
 
